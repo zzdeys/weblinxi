@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://120.79.174.36:3306/blog?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: MyNewPass4!
+    jpa:
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+logging:
+    level:
+        root: warn
+        com.linxi: info
+    file:
+        path: log/blog-pro.log
+
+server:
+    port: 8080
